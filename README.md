@@ -74,8 +74,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 - make sure to anotate `JSX.Element` as return type for components to ensure compilation detects erros when not returning elements as expected
 
-## TODO:
+## Live demo:
 
-- sync with github repo (done)
-- deploy to vercel (done)
-- make Notion project page for personal portfolio
+- sync with github repo (done): repo react-with-typescript-reminders-app
+- deploy to vercel (done): [react-with-typescript-reminders-app.vercel.app](react-with-typescript-reminders-app.vercel.app)
+- make Notion project page for personal portfolio:
