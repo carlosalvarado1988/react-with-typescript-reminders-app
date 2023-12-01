@@ -13,6 +13,7 @@ export const NewReminder = ({
     e.preventDefault();
     if (!title) return;
     onAddReminder(title);
+    setTitle("");
   };
 
   return (
