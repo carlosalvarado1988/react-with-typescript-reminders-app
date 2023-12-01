@@ -30,6 +30,11 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Reminder app</h1>
+      <p>
+        The intent of this app is to show how to properly setup and integrate
+        typescript in a ReactJS project
+      </p>
       <NewReminder onAddReminder={addRemider} />
       <ReminderList items={reminders} onDeleteReminder={deleteReminder} />
     </div>

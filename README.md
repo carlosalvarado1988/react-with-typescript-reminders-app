@@ -67,7 +67,15 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## UI Logic
 
 - implemented delete from UI with filter: `setReminder(reminders.filter((r) => r.id !== id));`
+- make sure all logic is separated from UI components logic, App.tsx is copling the serivices with the param functions.
+- in the submitForm, the validation is important: `if (!title) return;` so nothing is sent to the http class if the title is not truty.
 
 ## About Typescript with React good practices
 
 - make sure to anotate `JSX.Element` as return type for components to ensure compilation detects erros when not returning elements as expected
+
+## TODO:
+
+- sync with github repo (done)
+- deploy to vercel (done)
+- make Notion project page for personal portfolio
