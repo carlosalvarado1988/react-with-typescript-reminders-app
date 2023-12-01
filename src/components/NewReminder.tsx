@@ -1,0 +1,33 @@
+import React, { useState } from "react";
+
+interface NewReminderProps {
+  onAddReminder: (title: string) => void;
+}
+
+export const NewReminder = ({
+  onAddReminder,
+}: NewReminderProps): JSX.Element => {
+  const [title, setTitle] = useState("");
+
+  const submitForm = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!title) return;
+    onAddReminder(title);
+  };
+
+  return (
+    <form onSubmit={submitForm}>
+      <label htmlFor="title"></label>
+      <input
+        id="title"
+        type="text"
+        className="form-control"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+      />
+      <button type="submit" className="btn btn-primary my-3 rouded-pill">
+        Add reminder
+      </button>
+    </form>
+  );
+};

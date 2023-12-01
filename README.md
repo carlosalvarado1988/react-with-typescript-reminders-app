@@ -44,3 +44,30 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Dev notes
+
+### CSS
+
+- installed bootstrap for UI css `npm i bootstrap`
+- added css in index.tsx `import "bootstrap/dist/css/bootstrap.css";`
+- to the list, added: `<ul className="list-group">` & `<li className="list-group-item"`
+- for remove button added: `<button className="btn btn-outline-danger mx-3">`
+- to create the form component with autocomplete `label+input.form-control+button.btn.btn-primary.rouded-pill` and press ENTER
+- for accesibility, we ty htmlFor to input ID, `<label htmlFor="title"> ... <input id="title"` this so when the user clicks on the label, it automatically focus on the input
+
+### API
+
+- we use [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/) to mock the API
+- installed Axios for API call `npm i axios`
+- configured reminder class with base url `https://jsonplaceholder.typicode.com`
+- added methods: `getReminders, addReminder, removeReminder`
+- exported the instance of the class to make it easy for usage: `export default new ReminderService()`
+
+## UI Logic
+
+- implemented delete from UI with filter: `setReminder(reminders.filter((r) => r.id !== id));`
+
+## About Typescript with React good practices
+
+- make sure to anotate `JSX.Element` as return type for components to ensure compilation detects erros when not returning elements as expected
