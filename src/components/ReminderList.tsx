@@ -14,7 +14,7 @@ export const ReminderList = ({
       <ul className="list-group">
         {items.map((item) => (
           <li className="list-group-item" key={item.id}>
-            {item.title}
+            <span>{item.title}</span>
             <button
               className="btn btn-outline-danger mx-3"
               onClick={() => onDeleteReminder(item.id)}
