@@ -25,6 +25,10 @@ function App() {
 
   const addRemider = async (title: string) => {
     const newReminder = await reminderService.addReminder(title);
+    console.log(
+      "🚀 ~ file: App.tsx:32 ~ addRemider ~ newReminder:",
+      newReminder
+    );
     setReminder([newReminder, ...reminders]);
   };
 

@@ -79,3 +79,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - sync with github repo (done): repo react-with-typescript-reminders-app
 - deploy to vercel (done): [react-with-typescript-reminders-app.vercel.app](react-with-typescript-reminders-app.vercel.app)
 - make Notion project page for personal portfolio:
+
+## TODO:
+
+- integrate with reminder node demo in vercel
